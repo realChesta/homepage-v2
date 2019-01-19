@@ -1,0 +1,11 @@
+.home {
+    position: absolute;
+    background-color: #282c34;
+    width: 100vw;
+    height: 100vh;
+}
+
+.home-content {
+    max-width: 400px;
+    margin: 100px auto auto;
+}
