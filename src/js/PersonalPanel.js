@@ -9,9 +9,9 @@ import {
   Chip,
   Tooltip
 } from "@material-ui/core";
+import GridItem from "./GridItem";
 
 import '../styles/PersonalPanel.css';
-import GridItem from "./GridItem";
 
 class PersonalPanel extends Component {
   render() {
