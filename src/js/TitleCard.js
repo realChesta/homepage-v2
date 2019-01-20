@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Card, CardContent, CardActions, IconButton, Icon, SvgIcon, Tooltip} from "@material-ui/core";
+import {withTheme, Card, CardContent, CardActions, IconButton, Icon, SvgIcon, Tooltip} from "@material-ui/core";
 import moment from 'moment';
 
 import '../styles/TitleCard.css';
@@ -15,9 +15,11 @@ class TitleCard extends Component {
   }
 
   render() {
+    const primary = this.props.theme.palette.primary.main;
+
     return (
       <Card className="card">
-        <CardContent className="content">
+        <CardContent className="content" style={{ backgroundColor: primary }}>
           <label className="typo typo-name">Hello.</label>
           <p className="typo">
             I'm Kyrill, a {this.getAge()} years old first year informatics student at UZH.
@@ -56,4 +58,4 @@ class TitleCard extends Component {
   }
 }
 
-export default TitleCard;
+export default withTheme()(TitleCard);
