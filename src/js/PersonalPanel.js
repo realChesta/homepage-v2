@@ -19,8 +19,8 @@ class PersonalPanel extends Component {
       <ExpansionPanel className="panel">
         <ExpansionPanelSummary expandIcon={<Icon>expand_more</Icon>}>
           <Icon color="secondary">person</Icon>
-          <Typography variant="title" style={{marginLeft: "5px"}}>
-            Personal Details
+          <Typography style={{marginLeft: "5px", fontSize: "18px", fontWeight: "regular"}}>
+              Personal Details
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
