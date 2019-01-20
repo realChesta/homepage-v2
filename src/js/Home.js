@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {withTheme} from '@material-ui/core';
 import TitleCard from './TitleCard'
 
 import '../styles/Home.css';
@@ -10,6 +11,7 @@ class Home extends Component {
         <header>
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
           <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+          <meta name="theme-color" content={this.props.theme.palette.primary.main}/>
         </header>
         <div className="home-content">
           <TitleCard/>
@@ -19,4 +21,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default withTheme()(Home);
