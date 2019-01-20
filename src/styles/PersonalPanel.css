@@ -1,0 +1,24 @@
+.panel {
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.title-text {
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+.grid-container {
+    width: 100%;
+}
+
+.grid-item {
+    margin-top: 50px;
+}
+
+.grid-chip {
+    margin-right: 5px;
+}

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {withTheme} from '@material-ui/core';
 import TitleCard from './TitleCard'
+import PersonalPanel from "./PersonalPanel";
 
 import '../styles/Home.css';
 
@@ -15,6 +16,9 @@ class Home extends Component {
         </header>
         <div className="home-content">
           <TitleCard/>
+          <div className="home-content-container">
+            <PersonalPanel/>
+          </div>
         </div>
       </div>
     );
