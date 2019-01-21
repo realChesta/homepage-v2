@@ -15,6 +15,8 @@ import '../styles/PersonalPanel.css';
 
 class PersonalPanel extends Component {
   render() {
+    const primary = this.props.theme.palette.primary.main;
+
     return (
       <ExpansionPanel className="panel">
         <ExpansionPanelSummary expandIcon={<Icon>expand_more</Icon>}>
@@ -29,9 +31,9 @@ class PersonalPanel extends Component {
               Kyrill Hux
             </GridItem>
             <GridItem header="E-Mail(s)">
-              <a href="mailto:kyrill.hux@gmail.com">kyrill.hux@gmail.com</a>
+              <a style={{ color: primary}} href="mailto:kyrill.hux@gmail.com">kyrill.hux@gmail.com</a>
               <br/>
-              <a href="mailto:kyrill.hux@uzh.ch">kyrill.hux@uzh.ch</a>
+              <a style={{ color: primary}} href="mailto:kyrill.hux@uzh.ch">kyrill.hux@uzh.ch</a>
             </GridItem>
             <GridItem header="Languages">
               <div>

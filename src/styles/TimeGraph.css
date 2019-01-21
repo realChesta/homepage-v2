@@ -3,3 +3,10 @@
     width: 100%;
     min-height: 50px;
 }
+
+.graph-subtitle {
+    display: block;
+    max-width: 100%;
+    font-style: normal;
+    margin-top: 5px;
+}

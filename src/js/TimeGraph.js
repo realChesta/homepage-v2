@@ -3,37 +3,52 @@ import {withTheme} from '@material-ui/core';
 
 import "../styles/TimeGraph.css";
 import TimeItem from "./TimeItem";
+import TimeItemNow from "./TimeItemNow";
 
 class TimeGraph extends Component {
-  constructor(props) {
-    super(props);
-
-    this.dates = [
-      {"year": 2018, name: "test1", "location": "location1"},
-      {"year": 2017, name: "test2", "location": "location2"},
-      {"year": 2016, name: "test3", "location": "location3"},
-      {"year": 2014, name: "test4", "location": "location4"},
-    ];
-  }
-
 
   render() {
-    //sort by year
-    this.dates.sort((a,b) => { return a.year - b.year; });
-    this.dates.reverse();
+    const disabledText = this.props.theme.palette.text.disabled;
 
     return (
       <div className="graph-container">
-        <TimeItem year="2018" title="test1" location="location1">
-          <label style={{ maxWidth: "100%"}}>
-            Truncation should be conditionally applicable on this long line of text
-            as this is a much longer line than what the container can support.
+        <TimeItemNow/>
+        <TimeItem year="2018" title="University of Zürich" location="Zürich, CH">
+          <label style={{maxWidth: "100%", fontWeight: "light", fontStyle: "italic"}}>
+            Bachelor of Science in Informatics
+            <br/>
+            Expected graduation in 2021
+          </label>
+          <br/>
+          <label className="graph-subtitle" style={{color: disabledText}}>
+            2018-present
           </label>
         </TimeItem>
-        <TimeItem year="2017" title="test2" location="location2" last={true}>
-          <label style={{ maxWidth: "100%"}}>
-            Truncation should be conditionally applicable on this long line of text
-            as this is a much longer line than what the container can support.
+        <TimeItem year="2017" title="ETH Zürich" location="Zürich, CH">
+          <label style={{maxWidth: "100%", fontWeight: "light", fontStyle: "italic"}}>
+            Started Bsc Inf
+          </label>
+          <br/>
+          <label className="graph-subtitle" style={{color: disabledText}}>
+            2017-2018
+          </label>
+        </TimeItem>
+        <TimeItem year="2014" title="MNG Rämibühl" location="Zürich, CH">
+          <label style={{maxWidth: "100%", fontWeight: "light", fontStyle: "italic"}}>
+            Swiss Matura, grade 4.6
+          </label>
+          <br/>
+          <label className="graph-subtitle" style={{color: disabledText}}>
+            2014-2017
+          </label>
+        </TimeItem>
+        <TimeItem year="2008" title="iDSP" location="Paris, FR" last={true}>
+          <label style={{maxWidth: "100%", fontWeight: "light", fontStyle: "italic"}}>
+            internationale Deutsche Schule Paris
+          </label>
+          <br/>
+          <label className="graph-subtitle" style={{color: disabledText}}>
+            2008-2014
           </label>
         </TimeItem>
       </div>

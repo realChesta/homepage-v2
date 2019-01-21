@@ -1,4 +1,10 @@
+body {
+    background-color: #282c34;
+    max-width: 100%;
+}
+
 .home {
+    max-width: 100%;
     position: absolute;
     background-color: #282c34;
     width: 100vw;

@@ -15,7 +15,7 @@ import '../styles/EducationPanel.css';
 class EducationPanel extends Component {
   render() {
     return (
-      <ExpansionPanel expanded={true}>
+      <ExpansionPanel>
         <ExpansionPanelSummary expandIcon={<Icon>expand_more</Icon>}>
           <Icon color="secondary">school</Icon>
           <Typography style={{marginLeft: "5px", fontSize: "18px", fontWeight: "regular"}}>

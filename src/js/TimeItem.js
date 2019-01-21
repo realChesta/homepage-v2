@@ -31,12 +31,22 @@ class TimeItem extends Component {
   render() {
     const primary = this.props.theme.palette.primary.main;
 
-    let graphStyle = {
-      backgroundColor: primary,
-    };
-    if (this.state && !this.props.last) {
+    let graphStyle = {};
+    if (this.state) {
+      let height = this.state.height + 10;
+
+      if (this.props.last) {
+        height = height * 0.75;
+      }
+
       //compensate for margin of 10px
-      graphStyle["height"] = (this.state.height + 10) || "0px";
+      graphStyle["height"] = height || "0px";
+    }
+    if (this.props.last) {
+      graphStyle["backgroundImage"] = `linear-gradient(${primary}, rgba(255,0,0,0))`;
+    }
+    else {
+      graphStyle["backgroundColor"] = primary;
     }
 
     return (
