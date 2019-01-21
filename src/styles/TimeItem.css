@@ -1,0 +1,65 @@
+.item-container {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+}
+
+.item-year {
+    width: 50px;
+    flex-shrink: 0;
+}
+
+.item-dot-wrapper {
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    margin-top: 2px;
+    flex-shrink: 0;
+    overflow: visible;
+    z-index: 0;
+}
+
+.item-dot {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+}
+
+.item-title {
+    min-width: 50px;
+    padding-left: 5px;
+    flex-shrink: 0;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.item-location {
+    min-width: 100px;
+    flex-shrink: 0;
+}
+
+.item-location-container {
+    display: flex;
+    align-items: center;
+    flex-basis: 0;
+}
+
+.year-text {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.item-title-text {
+    display: block;
+}
+
+.graph-line {
+    position: relative;
+    top: 7px;
+    left: 4px;
+    width: 6px;
+    background-color: cornflowerblue;
+    z-index: -1;
+}
