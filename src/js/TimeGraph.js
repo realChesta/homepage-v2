@@ -21,7 +21,7 @@ class TimeGraph extends Component {
           </label>
           <br/>
           <label className="graph-subtitle" style={{color: disabledText}}>
-            2018-present
+            2018 - present
           </label>
         </TimeItem>
         <TimeItem year="2017" title="ETH Zürich" location="Zürich, CH">
@@ -30,7 +30,7 @@ class TimeGraph extends Component {
           </label>
           <br/>
           <label className="graph-subtitle" style={{color: disabledText}}>
-            2017-2018
+            2017 - 2018
           </label>
         </TimeItem>
         <TimeItem year="2014" title="MNG Rämibühl" location="Zürich, CH">
@@ -39,7 +39,7 @@ class TimeGraph extends Component {
           </label>
           <br/>
           <label className="graph-subtitle" style={{color: disabledText}}>
-            2014-2017
+            2014 - 2017
           </label>
         </TimeItem>
         <TimeItem year="2008" title="iDSP" location="Paris, FR" last={true}>
@@ -48,7 +48,7 @@ class TimeGraph extends Component {
           </label>
           <br/>
           <label className="graph-subtitle" style={{color: disabledText}}>
-            2008-2014
+            2008 - 2014
           </label>
         </TimeItem>
       </div>
