@@ -3,6 +3,7 @@ import {withTheme} from '@material-ui/core';
 import TitleCard from './TitleCard'
 import PersonalPanel from "./PersonalPanel";
 import EducationPanel from "./EducationPanel";
+import AwardsPanel from "./AwardsPanel";
 
 import '../styles/Home.css';
 
@@ -20,6 +21,7 @@ class Home extends Component {
           <div className="home-content-container">
             <PersonalPanel/>
             <EducationPanel/>
+            <AwardsPanel/>
           </div>
         </div>
       </div>
