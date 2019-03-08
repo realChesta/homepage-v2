@@ -8,6 +8,7 @@ import {
     ExpansionPanelDetails,
     Grid
 } from "@material-ui/core";
+import IconTitle from './IconTitle';
 
 import '../styles/AwardsPanel.css';
 
@@ -22,7 +23,7 @@ class AwardsPanel extends Component {
                     </Typography>
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>
-
+                    <IconTitle icon="code">Coding Competitions</IconTitle>
                 </ExpansionPanelDetails>
             </ExpansionPanel>
         );
