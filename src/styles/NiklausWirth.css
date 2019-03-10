@@ -1,0 +1,19 @@
+.wirth-container {
+    width: calc(100% - 30px);
+    margin-left: 30px;
+}
+
+.wirth-title-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wirth-title {
+    font-size: 18px;
+    font-weight: medium;
+    max-width: 70%;
+}
+
+.wirth-year {
+    font-size: 18px;
+}

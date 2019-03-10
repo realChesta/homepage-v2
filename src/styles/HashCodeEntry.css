@@ -1,0 +1,25 @@
+.hashcode-container {
+    display: flex;
+    width: calc(100% - 30px);
+    margin-left: 30px;
+}
+
+.hashcode-content {
+    display: block;
+    flex-shrink: 0;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.hashcode-title {
+    display: block;
+    font-size: 18px;
+    font-weight: medium;
+}
+
+.hashcode-place {
+    display: block;
+    font-weight: normal;
+    flex-basis: 0;
+    white-space: nowrap;
+}
