@@ -20,7 +20,7 @@ class AwardsPanel extends Component {
         const disabledText = this.props.theme.palette.text.disabled;
 
         return (
-            <ExpansionPanel expanded="true">
+            <ExpansionPanel>
                 <ExpansionPanelSummary expandIcon={<Icon>expand_more</Icon>}>
                     <Icon color="secondary">star</Icon>
                     <Typography style={{ marginLeft: "5px", fontSize: "18px", fontWeight: "regular" }}>
