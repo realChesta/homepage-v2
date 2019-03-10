@@ -14,6 +14,7 @@ class NiklausWirth extends Component {
                     <div className="wirth-title">Niklaus Wirth Young Talent Computer Science Award</div>
                     <div style={{ color: primary, fontSize: "18px" }}>2017</div>
                 </div>
+                <div style={{ color: disabledText, maxWidth: "70%"}}>for matura paper 'SoNNic'</div>
             </div>
         );
     }

@@ -31,7 +31,7 @@ class AwardsPanel extends Component {
                     <div className="awards-container">
                         <IconTitle icon="code">Coding Competitions</IconTitle>
                         <HashCodeEntry year="2018" place="81 / 4856">
-                        <label style={{color: disabledText, marginTop: "5px"}}>In a team of four</label>
+                        <label style={{color: disabledText, marginTop: "5px"}}>in a team of four</label>
                         </HashCodeEntry>
 
                         <Divider style={{marginTop: "20px", marginBottom: "20px"}}></Divider>
