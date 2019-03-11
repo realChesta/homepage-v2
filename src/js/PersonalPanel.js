@@ -30,7 +30,7 @@ class PersonalPanel extends Component {
             <GridItem header="Name">
               Kyrill Hux
             </GridItem>
-            <GridItem header="E-Mail(s)">
+            <GridItem header="E-Mail">
               <a style={{ color: primary}} href="mailto:kyrill.hux@gmail.com">kyrill.hux@gmail.com</a>
               <br/>
               <a style={{ color: primary}} href="mailto:kyrill.hux@uzh.ch">kyrill.hux@uzh.ch</a>
