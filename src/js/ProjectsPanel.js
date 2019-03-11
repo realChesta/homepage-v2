@@ -30,17 +30,17 @@ class ProjectsPanel extends Component {
                         </div>
                         <ProjectEntry
                             title="SoNNic"
-                            description="A machine learning algorithm that learns to play the first level of Sonic the Hedgehog using neuroevolution."
+                            description="A machine learning algorithm that autonomously learns to play the first level of Sonic the Hedgehog using neuroevolution."
                             github="https://github.com/realChesta/SoNNic"
                         >
                             <Fab
                                 variant="extended"
                                 color="primary"
                                 size="small"
-                                style={{ float: "right", marginRight: "8px" }}
+                                style={{ float: "right", marginRight: "8px", paddingRight: "10px" }}
                                 target="_blank"
                                 href="http://khux.ch/mng/sonnic">
-                                <SonnicIcon />
+                                {true ? <Icon>public</Icon> : <SonnicIcon />}
                                 <span style={{ marginLeft: "5px" }}>site</span>
                             </Fab>
                         </ProjectEntry>
@@ -51,7 +51,7 @@ class ProjectsPanel extends Component {
                         />
                         <ProjectEntry
                             title="SyncPad"
-                            description="An online editor with real-time collaboration. Written using react.js"
+                            description="An online text editor written using react.js with real-time collaboration, allowing multiple users to work on the same file simultaneously."
                             github="https://github.com/realChesta/syncpad"
                         />
                         <ProjectEntry
