@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import {withTheme, Card, CardContent, CardActions, IconButton, Icon, SvgIcon, Tooltip} from "@material-ui/core";
+import React, { Component } from 'react';
+import { withTheme, Card, CardContent, CardActions, IconButton, Icon, SvgIcon, Tooltip } from "@material-ui/core";
 import moment from 'moment';
 import GithubIcon from './GithubIcon';
 import SonnicIcon from './SonnicIcon';
@@ -10,6 +10,7 @@ class TitleCard extends Component {
   constructor(props) {
     super(props);
     this.birthday = moment([1998, 3, 18]);
+    this.lastUpdate = "11. March 2019";
   }
 
   getAge() {
@@ -29,8 +30,8 @@ class TitleCard extends Component {
         </CardContent>
         <CardActions>
           <Tooltip title="My GitHub">
-            <IconButton target= "_blank" href="https://github.com/realChesta">
-              <GithubIcon/>
+            <IconButton target="_blank" href="https://github.com/realChesta">
+              <GithubIcon />
             </IconButton>
           </Tooltip>
           <Tooltip title="Send me an e-mail!">
@@ -40,10 +41,16 @@ class TitleCard extends Component {
           </Tooltip>
           <Tooltip title="Matura Paper 'SoNNic'">
             <IconButton target="_blank" href="http://khux.ch/mng/sonnic">
-              <SonnicIcon/>
+              <SonnicIcon />
             </IconButton>
           </Tooltip>
-
+          <div className="last-update-container">
+            <Tooltip style={{ float: "right" }} title={"last update: " + this.lastUpdate}>
+              <IconButton>
+                <Icon>schedule</Icon>
+              </IconButton>
+            </Tooltip>
+          </div>
         </CardActions>
       </Card>
     );
