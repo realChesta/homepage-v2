@@ -1,0 +1,9 @@
+.project-container {
+    display: block;
+    padding: 10px;
+    max-width: 80%;
+}
+
+.project-title {
+    font-size: 18px;
+}

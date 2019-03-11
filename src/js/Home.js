@@ -4,6 +4,7 @@ import TitleCard from './TitleCard'
 import PersonalPanel from "./PersonalPanel";
 import EducationPanel from "./EducationPanel";
 import AwardsPanel from "./AwardsPanel";
+import ProjectsPanel from './ProjectsPanel';
 
 import '../styles/Home.css';
 
@@ -22,6 +23,7 @@ class Home extends Component {
             <PersonalPanel/>
             <EducationPanel/>
             <AwardsPanel/>
+            <ProjectsPanel/>
           </div>
         </div>
       </div>
