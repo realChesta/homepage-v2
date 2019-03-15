@@ -35,7 +35,7 @@ class PersonalPanel extends Component {
               <br/>
               <a style={{ color: primary}} href="mailto:kyrill.hux@uzh.ch">kyrill.hux@uzh.ch</a>
             </GridItem>
-            <GridItem header="Languages">
+            <GridItem header="Languages" style={{marginBottom: "0"}}>
               <div>
                 <Tooltip title="native" placement="top">
                   <Chip label="German" color="primary" className="grid-chip"/>
@@ -48,7 +48,7 @@ class PersonalPanel extends Component {
                 </Tooltip>
               </div>
             </GridItem>
-            <GridItem header="Preferred Programming Languages">
+            <GridItem header="Preferred Programming Languages" style={{marginBottom: "0"}}>
               <div>
                 <Chip label="C#" color="secondary" className="grid-chip"/>
                 <Chip label="JavaScript" color="secondary" className="grid-chip"/>
