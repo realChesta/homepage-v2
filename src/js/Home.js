@@ -17,6 +17,7 @@ class Home extends Component {
           <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
           <meta name="theme-color" content={this.props.theme.palette.primary.main}/>
         </header>
+        <div className="home-bg"/>
         <div className="home-content">
           <TitleCard/>
           <div className="home-content-container">
