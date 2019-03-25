@@ -10,7 +10,7 @@ class TitleCard extends Component {
   constructor(props) {
     super(props);
     this.birthday = moment([1998, 3, 18]);
-    this.lastUpdate = "11. March 2019";
+    this.lastUpdate = "15. March 2019";
   }
 
   getAge() {
@@ -21,14 +21,14 @@ class TitleCard extends Component {
     const primary = this.props.theme.palette.primary.main;
 
     return (
-      <Card className="card">
+      <Card className="card" style={{backgroundColor: "transparent"}}>
         <CardContent className="content" style={{ backgroundColor: primary }}>
           <label className="typo typo-name">Hello.</label>
           <p className="typo">
-            I'm Kyrill, a {this.getAge()} year old first year informatics student at UZH.
+            I'm Kyrill, a {this.getAge()} year old first year informatics student at the University of Zurich.
           </p>
         </CardContent>
-        <CardActions>
+        <CardActions style={{ backgroundColor: "#fff" }}>
           <Tooltip title="My GitHub">
             <IconButton target="_blank" href="https://github.com/realChesta">
               <GithubIcon />
@@ -47,7 +47,7 @@ class TitleCard extends Component {
           <div className="last-update-container">
             <Tooltip style={{ float: "right" }} title={"last update: " + this.lastUpdate}>
               <IconButton>
-                <Icon>schedule</Icon>
+                <Icon>event</Icon>
               </IconButton>
             </Tooltip>
           </div>

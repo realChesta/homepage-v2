@@ -26,7 +26,7 @@ class TimeGraph extends Component {
         </TimeItem>
         <TimeItem year="2017" title="ETH Zürich" location="Zürich, CH">
           <label style={{maxWidth: "100%", fontWeight: "light", fontStyle: "italic"}}>
-            Started Bsc Inf
+            2 semesters Bsc Inf
           </label>
           <br/>
           <label className="graph-subtitle" style={{color: disabledText}}>
@@ -35,7 +35,7 @@ class TimeGraph extends Component {
         </TimeItem>
         <TimeItem year="2014" title="MNG Rämibühl" location="Zürich, CH">
           <label style={{maxWidth: "100%", fontWeight: "light", fontStyle: "italic"}}>
-            Swiss Matura, grade 4.6
+            Swiss Matura
           </label>
           <br/>
           <label className="graph-subtitle" style={{color: disabledText}}>
