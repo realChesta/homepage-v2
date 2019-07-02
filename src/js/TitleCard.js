@@ -25,7 +25,7 @@ class TitleCard extends Component {
         <CardContent className="content" style={{ backgroundColor: primary }}>
           <label className="typo typo-name">Hello.</label>
           <p className="typo">
-            I'm Kyrill, a {this.getAge()} year old first year informatics student at the University of Zurich.
+            I'm Kyrill, a {this.getAge()} year old second year informatics student at the University of Zurich.
           </p>
         </CardContent>
         <CardActions style={{ backgroundColor: "#fff" }}>
