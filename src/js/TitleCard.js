@@ -10,7 +10,7 @@ class TitleCard extends Component {
   constructor(props) {
     super(props);
     this.birthday = moment([1998, 3, 18]);
-    this.lastUpdate = "2. July 2019";
+    this.lastUpdate = "10. July 2019";
   }
 
   getAge() {
