@@ -45,9 +45,9 @@ class ProjectsPanel extends Component {
                             </Fab>
                         </ProjectEntry>
                         <ProjectEntry
-                            title="Slide Extractor"
-                            description="A python script to extract slides from lecture videos and convert them to a PDF file."
-                            github="https://github.com/realChesta/slide-extractor"
+                            title="Window Mirror"
+                            description="A small tool wrirten in C#.NET that creates readonly copies of existing windows, making presentations of selected windows easy."
+                            github="https://github.com/realChesta/window-mirror"
                         />
                         <ProjectEntry
                             title="SyncPad"
