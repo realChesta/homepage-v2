@@ -18,7 +18,7 @@ class PersonalPanel extends Component {
     const primary = this.props.theme.palette.primary.main;
 
     return (
-      <ExpansionPanel className="panel">
+      <ExpansionPanel>
         <ExpansionPanelSummary expandIcon={<Icon>expand_more</Icon>}>
           <Icon color="secondary">person</Icon>
           <Typography style={{marginLeft: "5px", fontSize: "18px", fontWeight: "regular"}}>
