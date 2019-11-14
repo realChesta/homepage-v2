@@ -19,4 +19,4 @@ class HashCodeEntry extends Component {
     }
 }
 
-export default withTheme()(HashCodeEntry);
+export default withTheme(HashCodeEntry);

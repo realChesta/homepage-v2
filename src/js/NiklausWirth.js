@@ -20,4 +20,4 @@ class NiklausWirth extends Component {
     }
 }
 
-export default withTheme()(NiklausWirth);
+export default withTheme(NiklausWirth);

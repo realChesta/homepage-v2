@@ -46,7 +46,7 @@ class ProjectsPanel extends Component {
                         </ProjectEntry>
                         <ProjectEntry
                             title="Window Mirror"
-                            description="A small tool wrirten in C#.NET that creates readonly copies of existing windows, making presentations of selected windows easy."
+                            description="A small tool written in C#.NET that creates readonly copies of existing windows, making presentations of selected windows easy."
                             github="https://github.com/realChesta/window-mirror"
                         />
                         <ProjectEntry
@@ -66,4 +66,4 @@ class ProjectsPanel extends Component {
     }
 }
 
-export default withTheme()(ProjectsPanel);
+export default withTheme(ProjectsPanel);

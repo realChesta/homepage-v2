@@ -44,4 +44,4 @@ class AwardsPanel extends Component {
     }
 }
 
-export default withTheme()(AwardsPanel);
+export default withTheme(AwardsPanel);

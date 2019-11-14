@@ -57,4 +57,4 @@ class TitleCard extends Component {
   }
 }
 
-export default withTheme()(TitleCard);
+export default withTheme(TitleCard);

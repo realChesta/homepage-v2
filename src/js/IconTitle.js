@@ -14,4 +14,4 @@ class IconTitle extends Component {
     }
 }
 
-export default withTheme()(IconTitle);
+export default withTheme(IconTitle);

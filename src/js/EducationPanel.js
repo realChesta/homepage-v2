@@ -32,4 +32,4 @@ class EducationPanel extends Component {
   }
 }
 
-export default withTheme()(EducationPanel);
+export default withTheme(EducationPanel);

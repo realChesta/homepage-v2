@@ -63,4 +63,4 @@ class PersonalPanel extends Component {
   }
 }
 
-export default withTheme()(PersonalPanel);
+export default withTheme(PersonalPanel);

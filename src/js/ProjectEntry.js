@@ -28,4 +28,4 @@ class ProjectEntry extends Component {
     }
 }
 
-export default withTheme()(ProjectEntry);
+export default withTheme(ProjectEntry);

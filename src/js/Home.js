@@ -5,6 +5,7 @@ import PersonalPanel from "./PersonalPanel";
 import EducationPanel from "./EducationPanel";
 import AwardsPanel from "./AwardsPanel";
 import ProjectsPanel from './ProjectsPanel';
+import ExperiencePanel from './ExperiencePanel';
 
 import '../styles/Home.css';
 
@@ -23,6 +24,7 @@ class Home extends Component {
           <div className="home-content-container">
             <PersonalPanel/>
             <EducationPanel/>
+            <ExperiencePanel/>
             <AwardsPanel/>
             <ProjectsPanel/>
           </div>
@@ -32,4 +34,4 @@ class Home extends Component {
   }
 }
 
-export default withTheme()(Home);
+export default withTheme(Home);

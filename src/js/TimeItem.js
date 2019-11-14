@@ -89,4 +89,4 @@ class TimeItem extends Component {
   }
 }
 
-export default withTheme()(TimeItem);
+export default withTheme(TimeItem);

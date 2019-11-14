@@ -61,4 +61,4 @@ class TimeItemNow extends Component {
   }
 }
 
-export default withTheme()(TimeItemNow);
+export default withTheme(TimeItemNow);

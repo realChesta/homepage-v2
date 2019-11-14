@@ -56,4 +56,4 @@ class TimeGraph extends Component {
   }
 }
 
-export default withTheme()(TimeGraph);
+export default withTheme(TimeGraph);
