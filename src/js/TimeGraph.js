@@ -5,52 +5,41 @@ import "../styles/TimeGraph.css";
 import TimeItem from "./TimeItem";
 import TimeItemNow from "./TimeItemNow";
 
+/**
+ * Renders education in a pretty graph.
+ * Props:
+ * items: array containing education steps as objects
+ * -title: string (title of institution)
+ * -year: number (starting year)
+ * -location: string (location of institution)
+ * -description: string (some more text)
+ * -duration: string (a duration, rendered below description)
+ * -content: JSX or string (anything you'd like to render below the title)
+ */
 class TimeGraph extends Component {
 
   render() {
-    const disabledText = this.props.theme.palette.text.disabled;
+    let graphItems = [];
+    const items = this.props.items.sort(i => (i.year)).reverse();
+
+    for (let i of items) {
+      graphItems.push(
+        <TimeItem 
+          year={i.year} 
+          title={i.title} 
+          location={i.location}
+          description={i.description}
+          duration={i.duration}
+          last={items.indexOf(i) === items.length - 1}>
+          {i.content}
+        </TimeItem>
+      );
+    }
 
     return (
       <div className="graph-container">
         <TimeItemNow/>
-        <TimeItem year="2018" title="University of Zürich" location="Zürich, CH">
-          <label style={{maxWidth: "100%", fontWeight: "light", fontStyle: "italic"}}>
-            Bachelor of Science in Informatics
-            <br/>
-            Expected graduation in 2021
-          </label>
-          <br/>
-          <label className="graph-subtitle" style={{color: disabledText}}>
-            2018 - present
-          </label>
-        </TimeItem>
-        <TimeItem year="2017" title="ETH Zürich" location="Zürich, CH">
-          <label style={{maxWidth: "100%", fontWeight: "light", fontStyle: "italic"}}>
-            2 semesters Bsc Inf
-          </label>
-          <br/>
-          <label className="graph-subtitle" style={{color: disabledText}}>
-            2017 - 2018
-          </label>
-        </TimeItem>
-        <TimeItem year="2014" title="MNG Rämibühl" location="Zürich, CH">
-          <label style={{maxWidth: "100%", fontWeight: "light", fontStyle: "italic"}}>
-            Swiss Matura
-          </label>
-          <br/>
-          <label className="graph-subtitle" style={{color: disabledText}}>
-            2014 - 2017
-          </label>
-        </TimeItem>
-        <TimeItem year="2008" title="iDSP" location="Paris, FR" last={true}>
-          <label style={{maxWidth: "100%", fontWeight: "light", fontStyle: "italic"}}>
-            internationale Deutsche Schule Paris
-          </label>
-          <br/>
-          <label className="graph-subtitle" style={{color: disabledText}}>
-            2008 - 2014
-          </label>
-        </TimeItem>
+        {graphItems}
       </div>
     );
   }

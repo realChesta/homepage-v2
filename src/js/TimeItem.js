@@ -30,6 +30,7 @@ class TimeItem extends Component {
 
   render() {
     const primary = this.props.theme.palette.primary.main;
+    const disabledText = this.props.theme.palette.text.disabled;
 
     let graphStyle = {};
     if (this.state) {
@@ -62,6 +63,12 @@ class TimeItem extends Component {
           <label className="item-title-text">
             {this.props.title}
           </label>
+          <label style={{maxWidth: "100%", fontWeight: "light", fontStyle: "italic"}}>
+            {this.props.description}
+          </label>
+          <label className="graph-subtitle" style={{color: disabledText}}>
+            {this.props.duration}
+          </label>
           {this.props.children}
         </div>
         <div className="item-location">
@@ -72,20 +79,6 @@ class TimeItem extends Component {
         </div>
       </div>
     );
-
-    let old = <Grid container alignItems="enter" className="item-container">
-      <Grid item className="item-year">
-        <Typography className="year-text">{this.props.year}</Typography>
-      </Grid>
-      <Grid item className="item-dot"/>
-      <Grid item className="item-title" xs>
-        <Typography className="title">
-          {this.props.title}
-        </Typography>
-      </Grid>
-      <Grid item className="item-location">
-      </Grid>
-    </Grid>;
   }
 }
 
