@@ -38,7 +38,7 @@ class ExperiencePanel extends Component {
 
   render() {
     return (
-      <ExpansionPanel expanded={true}>
+      <ExpansionPanel>
         <ExpansionPanelSummary expandIcon={<Icon>expand_more</Icon>}>
           <Icon color="secondary">work</Icon>
           <Typography style={{marginLeft: "5px", fontSize: "18px", fontWeight: "regular"}}>
