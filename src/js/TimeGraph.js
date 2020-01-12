@@ -6,12 +6,13 @@ import TimeItem from "./TimeItem";
 import TimeItemNow from "./TimeItemNow";
 
 /**
- * Renders education in a pretty graph.
+ * Renders time events in a pretty graph.
  * Props:
+ * disconnected: if true, items will not be connected with a graph.
  * items: array containing education steps as objects
- * -title: string (title of institution)
+ * -title: string
  * -year: number (starting year)
- * -location: string (location of institution)
+ * -location: string
  * -description: string (some more text)
  * -duration: string (a duration, rendered below description)
  * -content: JSX or string (anything you'd like to render below the title)
@@ -30,7 +31,8 @@ class TimeGraph extends Component {
           location={i.location}
           description={i.description}
           duration={i.duration}
-          last={items.indexOf(i) === items.length - 1}>
+          last={items.indexOf(i) === items.length - 1}
+          disconnected={this.props.disconnected}>
           {i.content}
         </TimeItem>
       );
@@ -38,7 +40,8 @@ class TimeGraph extends Component {
 
     return (
       <div className="graph-container">
-        <TimeItemNow/>
+        {this.props.disconnected ?? <TimeItemNow/>}
+
         {graphItems}
       </div>
     );

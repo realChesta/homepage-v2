@@ -50,6 +50,10 @@ class TimeItem extends Component {
       graphStyle["backgroundColor"] = primary;
     }
 
+    if (this.props.disconnected) {
+      graphStyle["opacity"] = "0";
+    }
+
     return (
       <div className="item-container" ref={this.sizeCallback}>
         <div className="item-year">

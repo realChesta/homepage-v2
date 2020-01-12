@@ -41,7 +41,7 @@ class EducationPanel extends Component {
         year: 2018,
         title: "University of Zürich",
         location: "Zürich, CH",
-        description: "Bachelor of Science in Informatics\nExpected graduation in 2021",
+        description: "Bachelor of Science in Informatics\nExpected graduation in 2022",
         duration: "2018 - present"
       }
     ]
