@@ -6,12 +6,36 @@ import {
   ExpansionPanel,
   ExpansionPanelSummary,
   ExpansionPanelDetails,
+  Divider
 } from "@material-ui/core";
-import ExperienceItem from './ExperienceItem';
+import IconTitle from './IconTitle';
+import TimeGraph from './TimeGraph';
 
 import '../styles/ExperiencePanel.css';
 
 class ExperiencePanel extends Component {
+  constructor(props) {
+    super(props);
+    this.workItems = [
+      {
+        year: 2019,
+        title: "Triboni AG",
+        location: "Zürich, CH",
+        description: <span>Software Engineer<br/>40%</span>,
+        duration: "Aug. 2019 - present"
+      }
+    ];
+    this.otherItems = [
+      {
+        year: 2019,
+        title: "University of Zürich",
+        location: "Zürich, CH",
+        description: "Informatics I Tutor",
+        duration: "Sep. 2019 - Dez. 2019"
+      }
+    ]
+  }
+
   render() {
     return (
       <ExpansionPanel expanded={true}>
@@ -22,7 +46,13 @@ class ExperiencePanel extends Component {
           </Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <ExperienceItem time="August 2018 - present" name="Triboni AG"/>
+          <div className="experience-container">
+            <IconTitle icon="class">Work Experience</IconTitle>
+            <TimeGraph items={this.workItems}/>
+            <Divider style={{marginTop: "20px", marginBottom: "20px"}}/>
+            <IconTitle icon="speaker_notes">Other Experience</IconTitle>
+            <TimeGraph items={this.otherItems} disconnected={true}/>
+          </div>
         </ExpansionPanelDetails>
       </ExpansionPanel>
     );
