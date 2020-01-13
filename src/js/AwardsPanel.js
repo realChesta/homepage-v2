@@ -6,19 +6,15 @@ import {
     ExpansionPanel,
     ExpansionPanelSummary,
     ExpansionPanelDetails,
-    Grid,
     Divider
 } from "@material-ui/core";
 import IconTitle from './IconTitle';
-import HashCodeEntry from './HashCodeEntry';
+import AwardEntry from "./AwardEntry";
 
 import '../styles/AwardsPanel.css';
-import NiklausWirth from './NiklausWirth';
 
 class AwardsPanel extends Component {
     render() {
-        const disabledText = this.props.theme.palette.text.disabled;
-
         return (
             <ExpansionPanel>
                 <ExpansionPanelSummary expandIcon={<Icon>expand_more</Icon>}>
@@ -30,13 +26,18 @@ class AwardsPanel extends Component {
                 <ExpansionPanelDetails>
                     <div className="awards-container">
                         <IconTitle icon="code">Coding Competitions</IconTitle>
-                        <HashCodeEntry year="2018" place="81 / 4856">
-                        <label style={{color: disabledText, marginTop: "5px"}}>in a team of four</label>
-                        </HashCodeEntry>
-
-                        <Divider style={{marginTop: "20px", marginBottom: "20px"}}></Divider>
+                        <AwardEntry
+                          title="Google hash code 2018"
+                          description="in a team of four"
+                          extra="placed 81 / 4856"
+                        />
+                        <Divider style={{marginTop: "20px", marginBottom: "20px"}}/>
                         <IconTitle icon="stars">Awards</IconTitle>
-                        <NiklausWirth/>
+                        <AwardEntry
+                            title="Niklaus Wirth Young Talent Computer Science Award"
+                            description="for matura paper 'SoNNic'"
+                            extra="2017"
+                        />
                         </div>
                 </ExpansionPanelDetails>
             </ExpansionPanel>
