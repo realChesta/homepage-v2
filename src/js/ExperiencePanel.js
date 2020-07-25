@@ -22,7 +22,14 @@ class ExperiencePanel extends Component {
         title: "Triboni AG",
         location: "Zürich, CH",
         description: <span>Software Engineer<br/>40%</span>,
-        duration: "Aug. 2019 - present"
+        duration: "Aug. 2019 - Jul. 2020"
+      },
+      {
+        year: 2020,
+        title: "SEC Consult (Schweiz) AG",
+        location: "Zürich, CH",
+        description: <span>Associate Security Consultant<br/>(Intern) 100%</span>,
+        duration: "Jul. 2020 - present"
       }
     ];
     this.otherItems = [

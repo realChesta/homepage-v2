@@ -10,7 +10,7 @@ class TitleCard extends Component {
   constructor(props) {
     super(props);
     this.birthday = moment([1998, 3, 18]);
-    this.lastUpdate = "13. January 2020";
+    this.lastUpdate = "25. July 2020";
   }
 
   getAge() {
@@ -25,7 +25,7 @@ class TitleCard extends Component {
         <CardContent className="content" style={{ backgroundColor: primary }}>
           <label className="typo typo-name">Hello.</label>
           <p className="typo">
-            I'm Kyrill, a {this.getAge()} year old second year informatics student at the University of Zurich.
+            I'm Kyrill, a {this.getAge()} year old third year informatics student at the University of Zurich.
           </p>
         </CardContent>
         <CardActions style={{ backgroundColor: "#fff" }}>
